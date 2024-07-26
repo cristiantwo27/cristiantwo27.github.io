@@ -19,11 +19,11 @@
                 <key>bundle-identifier</key>
                 <string>com.coppel.colaborappx-</string> <!-- Identificador del bundle de tu app -->
                 <key>bundle-version</key>
-                <string>2.11.9</string> <!-- Versión de tu app -->
+                <string>1.0</string> <!-- Versión de tu app -->
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>ColaborApp</string> <!-- Nombre de tu app -->
+                <string>Coppel ColaborApp</string> <!-- Nombre de tu app -->
             </dict>
         </dict>
     </array>
