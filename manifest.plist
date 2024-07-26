@@ -11,8 +11,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <!--<string>https://cristiantwo27.github.io/ColaborApp2.ipa</string>--> <!-- URL HTTPS del archivo .ipa -->
-                    <string>https://drive.google.com/file/d/1BGVrYjN15y5_RPz9zmblQgX-hsAQgqXm/view</string>
+                    <string>https://cristiantwo27.github.io/ColaborApp2.ipa</string> <!-- URL HTTPS del archivo .ipa -->
                 </dict>
             </array>
             <key>metadata</key>
