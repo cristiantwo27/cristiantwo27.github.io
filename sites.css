@@ -1,0 +1,340 @@
+.site-body{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.site-container {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 750px;
+    margin-top: 0px;
+}
+
+.site-container:before,
+.site-container:after {
+    display: table;
+    content: " ";
+}
+
+.site-container:after {
+    clear: both;
+}
+
+.site-container:before,
+.site-container:after {
+    display: table;
+    content: " ";
+}
+
+.site-app-icon{
+    width: 180px;
+    height: 180px;
+}
+
+.site-app-title{
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 800;
+}
+
+.subs {
+  font-size: 17px;
+  color: #0084eb;
+  margin-bottom: 20px;
+}
+
+.site-right-info{
+    padding-left: 50px;
+}
+
+.site-install-button{
+    margin-top: 20px;
+}
+
+.site-description-area{
+    margin-top: 0px;
+}
+
+@media (max-width: 768px) {
+    .site-container {
+        padding-top: 0px;
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .site-right-info{
+        padding-left: 20px;
+    }
+
+    .site-app-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .site-app-title{
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .site-description-area{
+
+    }
+}
+
+.build-info-section{
+    margin-bottom: 10px;
+}
+
+
+
+.site-header{
+    width: 100%;
+    float: none;
+    position: fixed !important;
+    background: #367FA9;
+    height: 50px;
+    margin-top: -20px;
+    z-index: 1;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.site-logo{
+    text-align: center;
+    padding: 0 10px;
+    height: 50px;
+    display: block;
+    margin-top: 3px;
+    font-weight: 100;
+    font-size: 20px;
+    color: #f9f9f9
+}
+
+.site-logo-img{
+    max-width: 150px;
+    margin-top: 2px;
+    max-height: 40px;
+}
+
+.applivery-logo{
+    margin-top: 10px;
+}
+
+.topmargin{
+    margin-bottom: 20px;
+}
+
+.tutorial-view{
+    display: none;
+    position: fixed;
+    top: 0px;
+    height:100vh;
+    width: 100vw;
+    background-color: #000;
+    opacity: 0;
+    z-index: 3;
+}
+
+.tutorial-content{
+    display: none;
+    z-index: 5;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;
+    /*border: 1px solid red;*/
+}
+
+.tutorial-content-big{
+    top: 20%;
+}
+
+.tutorial-content-small{
+    top: 20%;
+}
+
+.tutorial-content-home{
+    position: fixed;
+    bottom: 2px;
+    left: 50%;
+    margin-left: -23px;
+    font-size: 50px;
+}
+
+.tutorial-apple-alert{
+    width: 200px;
+    padding: 10px;
+    color: #000000;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #E6F5F2;
+    margin-top: 100px;
+    margin-left: -100px;
+    position: absolute;
+    left: 50%;
+    font-size: 16px;
+}
+
+.tutorial-content-blue{
+    /*color: #367FA9;*/
+    color: #1D81F1;
+}
+
+.tutorial-apple-alert-cancel{
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid #FFF;
+    margin-top: 10px;
+}
+
+.tutorial-content-bold{
+    font-weight: bold;
+}
+
+.tutorial-content-home{
+    position: fixed;
+    bottom: 2px;
+    left: 50%;
+    margin-left: -23px;
+    font-size: 50px;
+}
+
+.tutorial-content-list{
+    text-align: left;
+    line-height: 25px;
+}
+
+.tutorial-button{
+    border: 1px solid #FFF;
+    padding: 10px;
+    width: 140px;
+    border-radius: 5px;
+    margin: 25px auto;
+}
+
+.tutorial-button-android{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.tutorial-android-step2{
+    position: fixed;
+    text-align: left;
+    top: 2px;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+
+/* TUTORIAL */
+.tutorial-iOS-installing{
+    margin-top: -70px;
+    width: 100%;
+}
+
+.tutorial-iOS-installing-enterprise{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.tutorial-iOS-installing-description{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.tutorial-Android-installing-description{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.tutorial-iOS-arrow{
+    -ms-transform: rotate(-50deg); /* IE 9 */
+    -webkit-transform: rotate(-50deg); /* Chrome, Safari, Opera */
+    transform: rotate(-50deg);
+    width: 50px;
+    position: relative;
+    margin-left: 60px;
+    margin-top: -10px;
+}
+
+.tutorial-Android-arrow{
+    -ms-transform: rotate(-50deg); /* IE 9 */
+    -webkit-transform: rotate(-50deg); /* Chrome, Safari, Opera */
+    transform: rotate(-50deg);
+    width: 50px;
+    position: relative;
+    margin-left: 60px;
+    margin-top: 100px;
+}
+
+
+.tutorial-iOS-installing-enterprise-steps{
+    font-size: 16px;
+    margin-top: -50px;
+}
+
+.tutorial-notification-box{
+    position: relative;
+    top: 80px;
+    width: 235px;
+    height: 47px;
+    border-radius: 2px;
+    margin: 0 auto;
+    /*box-shadow: 0 0 2px 0 #fff, 0 2px 2px 0 #fff;*/
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+}
+
+.tutorial-notification-info{
+    margin-left: 10px;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.tutorial-left{
+    float: left;
+}
+
+.tutorial-right{
+    float: right;
+}
+
+.tutorial-notification-time {
+    font-size: 9px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.tutorial-notification-icon{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.tutorial-notification-info{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.tutorial-notification-msg{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.tutorial-notification-appname{
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 130px;
+}
