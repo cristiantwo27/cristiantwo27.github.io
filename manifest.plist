@@ -17,7 +17,7 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>ccom.coppel.-</string> <!-- Identificador del bundle de tu app -->
+                <string>com.coppel.-</string> <!-- Identificador del bundle de tu app -->
                 <key>bundle-version</key>
                 <string>1.0.0</string> <!-- Versión de tu app -->
                 <key>kind</key>
