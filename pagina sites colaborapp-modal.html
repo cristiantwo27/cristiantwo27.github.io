@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html style="min-height: 976px;">
+
+<head>
+    <title>ColaborApp | Coppel</title>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://cristiantwo27.github.io/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://cristiantwo27.github.io/sites.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body {
+            background: #f2f2f2;
+            background: -moz-radial-gradient(center, ellipse cover, #f9f9f9 0%, #efefef 100%);
+            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f9f9f9), color-stop(100%, #efefef));
+            background: -webkit-radial-gradient(center, ellipse cover, #f9f9f9 0%, #efefef 100%);
+            background: -o-radial-gradient(center, ellipse cover, rgb(223, 43, 48) 0%, rgb(134, 0, 0) 100%);
+            background: -ms-radial-gradient(center, ellipse cover, rgb(223, 43, 48) 0%, rgb(134, 0, 0) 100%);
+            background: radial-gradient(ellipse at center, #f9f9f9 0%, #efefef 100%);
+            background-attachment: fixed;
+            color: #333;
+            height: auto !important;
+            min-height: 100%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        .main-install-area {
+            color: #333333;
+        }
+
+        .customLink {
+            color: #333333;
+        }
+
+        .customText {
+            color: #333333;
+        }
+
+        .site-header {
+            background-color: #367fa9;
+        }
+
+        .customButton {
+            background-color: #0984e3 !important;
+            border: none;
+            padding: 10px 35px;
+            border-radius: 6px;
+            box-shadow: 0px 5px 0px #17608e;
+        }
+
+        .customButton:hover,
+        .customButton:active,
+        .customButton.hover {
+            background-color: #0a4375 !important;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="site-body pace-done" style="min-height: 976px;">
+    <div class="pace pace-inactive">
+        <div class="pace-progress" style="width: 100%;" data-progress-text="100%" data-progress="99">
+            <div class="pace-progress-inner"></div>
+        </div>
+        <div class="pace-activity"></div>
+    </div>
+
+    <div id="main-container" class="site-container">
+        <div class="main-install-area">
+            <div class="col-xs-4 col-md-3">
+                <img class="site-app-icon" src="https://cristiantwo27.github.io/colaborapp.jpg" style="border-radius: 30px;">
+            </div>
+            <div class="col-xs-8 col-md-9 site-right-info">
+                <div class="site-app-title">ColaborApp</div>
+                <p class="subs">Coppel S.A. de C.V.</p>
+                <div></div>
+
+                <div class="site-install-button">
+                    <div id="installBtn">
+                        <a id="installButton" href="#" class="customButton"
+                            style="color:white;margin-left:0px;margin-right:0px;font-weight: 800;padding: 10px 32px;text-decoration: none;">
+                            Descargar Apple
+                        </a>
+                    </div>
+                    <span>&nbsp;</span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row topmargin"></div>
+        <!-- Dist. Site Description-->
+
+        <div class="box box-solid col-xs-12 col-md-12 site-description-area">
+            <p>Aplicación para colaboradores de Grupo
+                Coppel, donde encontrarás servicios como nómina, comunicados oficiales y
+                la serie Visionarios.</p>
+        </div>
+    </div>
+    <div class="site-container text-center">
+        <img src="https://cristiantwo27.github.io/manual.png" style="border-radius: 30px; width: 100%;">
+    </div>
+
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Una vez que hayas seleccionado el botón de instalar, por favor revisa la pantalla de inicio de tu dispositivo para ver el progreso de la instalación.</p>
+
+            <p>Una vez completada, encontrarás la aplicación en tu lista de aplicaciones.</p>
+
+            <p>¡Gracias por instalar ColaborApp!</p>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("installButton");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            // Open the modal
+            modal.style.display = "block";
+            // Redirect to the URL
+            window.location.href = "itms-services://?action=download-manifest&url=https://cristiantwo27.github.io/manifest.plist";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
